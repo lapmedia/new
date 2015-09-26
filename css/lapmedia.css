@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic,700,700italic);header{}
+body{font-size:16px;font-family: "Open Sans", sans-serif; background-color:#F5F8FA;}
+h1{font-family: "Raleway", sans-serif; font-size: 2em; font-weight: bold;}
+h2{font-family: "Raleway", sans-serif; font-size: 1.5em; font-weight: bold;}
+h3{font-family: "Raleway", sans-serif; font-size: 1em;}
+address{font-size:1em;font-family: "Open Sans", sans-serif;}
+nav{width:100%;padding:0px 0px 0px;margin:0px;background:#127FAA;background-repeat:repeat-x;position:fixed;z-index:100!important;
+font-size:16px;font-family: "Open Sans", sans-serif;}
+.navbar-default{background-color:#1F85FD;border-color:transparent;opacity:0.9;filter:alpha(opacity=40);}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #83D702;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+hr {border: 1px dashed #83D702; height: 0; width: 60%;}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{color:#ffffff;background-color:#1D7EF0;}
+aside{background:url(../img/fondo-servicios.jpg);background-size:cover;background-attachment:fixed;color:white;}
+#fondo{background:url(../img/portafolio.jpg);background-size:cover;background-attachment:fixed;color:white;}
+footer{background-image:url(../img/linea.jpg);background-repeat:repeat-x;background-color:#22313F;color:#fff;padding:20px 0 70px;}
+.titulo-servicio{font-size:22px;text-shadow:1px 1px 1px #000;text-align:center;position:relative;color:#fff;font-weight:normal;padding:10px;margin-top:10px;text-transform:uppercase;width:150px;height:50px;background:#83D702;opacity:0.7;filter:alpha(opacity=40);}
+.titulo-contacto{font-size:22px;text-shadow:1px 1px 1px #000;text-align:center;position:relative;color:#fff;font-weight:normal;padding:10px;margin-top:10px;text-transform:uppercase;width:175px;height:50px;background:#83D702;opacity:0.7;filter:alpha(opacity=40);}
+.video-section .pattern-overlay{background-color:rgba(71, 71, 71, 0.59);padding:110px 0 32px;min-height:496px;}
+.video-section h1, .video-section h3{text-align:center;color:#fff;}
+.video-section h1{font-size:110px;font-family:'Buenard', serif;font-weight:bold;text-transform:uppercase;margin:40px auto 0px;text-shadow:1px 1px 1px #000;-webkit-text-shadow:1px 1px 1px #000;-moz-text-shadow:1px 1px 1px #000;}
+.video-section h3{font-size:25px;font-weight:lighter;margin:0px auto 15px;}
+.video-section .buttonBar{display:none;}
+.player{font-size:1px;}
+.fondoazul{color:white;}
+.live-banner{background:url("../images/home/test.jpg") no-repeat center;-webkit-background-size:cover;background-size:cover;color:#fff;overflow:hidden;position:relative;text-align:center;height:100%;}
+.live-banner .logo-live{background:rgba(0,0,0,0.4);margin-bottom:20px;padding:10px 0}
+.live-banner video{position:absolute;left:0;right:0;width:100%}
+.live-banner h3{font-size:2.3em;font-weight:bold;letter-spacing:2px;margin-bottom:10px;text-transform:uppercase}
+.live-banner .curtain{-o-animation:huerotator 3s infinite alternate;-ms-animation:huerotator 3s infinite alternate;-moz-animation:huerotator 3s infinite alternate;-webkit-animation:huerotator 3s infinite alternate;animation:huerotator 3s infinite alternate;background:-webkit-gradient(linear, left top, right top, color-stop(0, rgba(151,202,91,0.5)), color-stop(1, rgba(189,101,165,0.5)));background:-o-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);background:-ms-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);background:-moz-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);background:-webkit-linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);background:linear-gradient(left, rgba(151,202,91,0.5) 0, rgba(189,101,165,0.5) 100%);bottom:0;left:0;position:absolute;right:0;top:0}
+.live-banner .msg{font-size:16px}
+.live-banner .gradient{padding-bottom:30px;position:relative;z-index:2}
+.live-banner .on-air{border:15px solid #fff;display:inline-block;zoom:1;-ms-zoom:1;-webkit-zoom:1;-moz-transform:scale(1,1);-moz-transform-origin:left center;*display:inline;font-size:5em;font-weight:bold;line-height:80px;margin-bottom:10px;padding:0 20px;text-transform:uppercase}
+.live-banner .time{font-size:2.1em;text-transform:uppercase;font-weight:bold;line-height:2.3em;letter-spacing:.3em}
+.live-banner .link{margin:20px 0 0}
+.live-banner .follow{background:rgba(0,0,0,0.3);-o-border-radius:35px;-ms-border-radius:35px;-moz-border-radius:35px;-webkit-border-radius:35px;border-radius:35px;color:#fff;display:block;font-size:1.2em;font-weight:600;height:70px;line-height:70px;margin:30px auto 0;text-align:center;width:500px;}
+.live-banner .follow img{margin-right:10px;vertical-align:middle;width:61px}
+.profile-element{float:left;margin-bottom:25px;background-position:0px 0px;}
+.element-1{background:url(../img/mision.png) no-repeat;}
+.element-2{background:url(../img/vision.png) no-repeat;}
+.element-3{background:url(../img/valores.png) no-repeat;}
+.profile-element:hover{background-position:0 -212px;cursor:pointer;}
+.profile{width:500px;margin:auto;}
+.testimonial{margin:0;background:#B7EDFF;padding:10px 50px;position:relative;font-family:Georgia, serif;color:#666;border-radius:5px;font-style:italic;text-shadow:0 1px 0 #ECFBFF;background-image:linear-gradient(#CEF3FF, #B7EDFF);background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#CEF3FF), to(#B7EDFF));background-image:-webkit-linear-gradient(top, #CEF3FF, #B7EDFF);background-image:-moz-linear-gradient(top, #CEF3FF, #B7EDFF);background-image:-ms-linear-gradient(top, #CEF3FF, #B7EDFF);background-image:-o-linear-gradient(top, #CEF3FF, #B7EDFF);}
+.testimonial:before, .testimonial:after{content:"\201C";position:absolute;font-size:80px;line-height:1;color:#999;font-style:normal;}
+.testimonial:before{top:0;left:10px;}
+.testimonial:after{content:"\201D";right:10px;bottom:-0.5em;}
+.arrow-down{width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid #B7EDFF;margin:0 0 0 25px;}
+.testimonial-author{margin:0 0 0 25px;font-family:Arial, Helvetica, sans-serif;color:#999;text-align:left;}
+.testimonial-author span{font-size:12px;color:#666;}​
+.logos{text-align:center;}
+.logos img{margin-left:30px;}
+.grises img{filter:url('#grayscale');-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);filter:Gray();-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.grises img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:none;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.contacto{background:url(../img/contacto.jpg);color:white;}
+.proyectos{background:url(../img/portafolio.jpg);background-attachment:fixed;}
+.quote{color:rgba(0,0,0,.1);text-align:center;margin-bottom:30px;}
+#fade-quote-carousel.carousel{padding-bottom:60px;}
+#fade-quote-carousel.carousel .carousel-inner .item{opacity:0;-webkit-transition-property:opacity;-ms-transition-property:opacity;transition-property:opacity;}
+#fade-quote-carousel.carousel .carousel-inner .active{opacity:1;-webkit-transition-property:opacity;-ms-transition-property:opacity;transition-property:opacity;}
+#fade-quote-carousel.carousel .carousel-indicators{bottom:10px;}
+#fade-quote-carousel.carousel .carousel-indicators > li{background-color:#e84a64;border:none;}
+#fade-quote-carousel blockquote{text-align:center;border:none;}
+#fade-quote-carousel .profile-circle{width:100px;height:100px;margin:0 auto;border-radius:100px;}
+#fondo img{min-height;}
+.columnas-iconos{list-style-type:none;}
+.media-carousel{margin-bottom:0;padding:0 40px 30px 40px;margin-top:30px;}
+.media-carousel .carousel-control.left{left:-12px;background-image:none;background:none repeat scroll 0 0 #222222;border:4px solid #FFFFFF;border-radius:23px 23px 23px 23px;height:40px;width:40px;margin-top:30px}
+.media-carousel .carousel-control.right{right:-12px !important;background-image:none;background:none repeat scroll 0 0 #222222;border:4px solid #FFFFFF;border-radius:23px 23px 23px 23px;height:40px;width:40px;margin-top:30px}
+.media-carousel .carousel-indicators{right:50%;top:auto;bottom:0px;margin-right:-19px;}
+.media-carousel .carousel-indicators li{background:#c0c0c0;}
+.media-carousel .carousel-indicators .active{background:#333333;}
+.media-carousel img{height:59px}
+.grises img{filter:url('#grayscale');-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);filter:Gray();-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.grises img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:none;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+form{color:black;}
+.btn-success{color:#ffffff;background-color:#83D702;border-color:#18bc9c;}
+#fondo-mar{background-image:url(../img/fondo-lapaz.jpg);}
+.sombras {text-shadow: 5px 1px 0px rgba(0, 49, 63, 0.23);}
+@media screen and (min-width:768px){#fondo{min-height;}
+.jumbo{ background-color:#22313F; color:#fff; border-radius: 5px; padding: 25px 30px;}
+.cuadro{  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  background-color:#fff;
+  padding: 11px 20px 10px 20px;
+  border: solid #e1e8ed 2px;
+  text-decoration: none;}
+

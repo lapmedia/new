@@ -1,0 +1,1 @@
+__twttr.receiveCount({"count":4,"url":"http:\/\/www.lapmedia.mx\/"});
