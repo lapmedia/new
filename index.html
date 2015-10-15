@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="lapmedia">
 <head>
 	<meta charset="utf-8">
 	<title>LAPMEDIA | Páginas Web| Diseño Gráfico | Publicidad  |  Programación Movil| La Paz Baja California Sur México</title>
@@ -25,6 +25,7 @@ v2.26092015|cambio-de-imagen
 	<link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
     <link href="//fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet" type="text/css"/>
+
 	<!-- Custom CSS -->
 	<link href="css/scrolling-nav.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -59,15 +60,15 @@ v2.26092015|cambio-de-imagen
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- botonface -->
-							<div id="fb-root"></div>
-								<script>(function(d, s, id) {
-								  var js, fjs = d.getElementsByTagName(s)[0];
-								  if (d.getElementById(id)) return;
-								  js = d.createElement(s); js.id = id;
-								  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
-								  fjs.parentNode.insertBefore(js, fjs);
-								}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- botonface -->
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
   <header>
 	<!-- menu de navegación -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -125,29 +126,9 @@ v2.26092015|cambio-de-imagen
         <hgroup>
             <h1>¿QUÉ NECESITAS DISEÑAR?</h1>        
             <!--formulario-->
-        <form class="form-horizontal">
-        <fieldset>
-        
-        <!-- Select Basic -->
-        <div class="form-group">
-          <label class="col-sm-4 control-label" for="selectbasic"></label>
-          <div class="col-sm-4">
-            <select id="selectbasic" name="selectbasic" class="form-control">
-              <option value="1">Diseño Web</option>
-              <option value="2">Diseño de Imagen Corporativa (Logotipo, Tarjetas, Folletos)</option>
-              <option value="3">Tienda en linea (Con pago Banamex y Paypal)</option>
-              <option value="4">Sistemas administrativos</option>
-              <option value="5">Servicio para Agencias</option>
-              <option value="6">Otro</option>
-            </select>
-          </div>
-        </div>
-
-        </fieldset>
-        </form>
         </hgroup>
         
-        <button class="btn-hero btn-lg page-scroll" href="#servicios">Obten Información</button>
+        <button class="btn-hero btn-lg page-scroll" ng-click="$root.modalContact()">Obten Información</button>
    
     </div>
     <div class="video-container">
@@ -157,7 +138,7 @@ v2.26092015|cambio-de-imagen
             <source src="video.webm" type="video/webm" />¡oooups! veo que todavia vives en la epoca de las cavernas, tu navegador no soporta este video, no te preocupes actualiza cuanto antes.
         </video>
         <div class="poster hidden">
-            <img src="video.jpg" alt="">
+            <!-- img src="video.jpg" alt="" -->
         </div>
     </div>
    </div>  
@@ -619,198 +600,184 @@ v2.26092015|cambio-de-imagen
 					<br>
 				</section>  	
 					<!-- fin del contenedor de portafolio -->
-				<section id="contacto">	
-				<div class="contacto">
-					<!--inicia el contenedor-->
-					<div class="container">			
-						<div class="row clearfix">
-							<div class="col-md-12 column">
-                            <h1 align="right">ESCRÍBENOS</h1>
-                            <hr align="right">
-                            <p class="text-right">Si buscas Creatividad,Honestidad y Compromiso estas en el 
-									sitio correcto.</p>
-								
-							</div>
-							</div>
-							<div class="row clearfix">
-								<div class="col-md-4 column">
-									<!-- zona pendiente -->
-								</div>
-								<div class="col-md-8 column">
-									<div class="well well-sm">
-										<form action="envio.php" method="post" id="contactform" name="contactform" title="LAPMEDIA - contacto">	
-											<div class="row">
-												<div class="col-md-6">
-													<div class="form-group">
-														<input type="hidden" class="form-control" id="verifspam"  name="verifspam" />
-														<label for="name">
-															</label>
-															<input type="text" class="form-control" id="name"  name="name" placeholder="Escribe tu nombre" required />
-														</div>
-														<div class="form-group">
-															<label for="email">
-																</label>
-																<div class="input-group">
-																	<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-																</span>
-																<input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu email" required /></div>
-															</div>
-															<div class="form-group">
-																<label for="subject">
-																	</label>
-																	<select id="subject" name="subject" class="form-control" required>
-																		<option value="na" selected="">Tipo de Servicio:</option>
-																		<option value="Diseño Web">Diseño Web</option>
-																		<option value="Diseño Grafico">Diseño Gráfico</option>
-																		<option value="Soporte">Soporte</option>
-																		<option value="Videos">Videos Corporativos</option>
-																		<option value="fotos">Sesión de Fotos</option>
-																		<option value="Apps">Programación de Aplicaciones</option>
-																		<option value="Software">Desarrollo de Software</option>
-																		<option value="Otro">Otro</option>
-																	</select>
-																</div>
-															</div>
-															<div class="col-md-6">
-																<div class="form-group">
-																	<label for="name">
-																		</label>
-																		<textarea name="message" id="message" class="form-control" rows="9" cols="25" required
-																		placeholder="Mensaje"></textarea>
-																	</div>
-																</div>
-																<div class="col-md-12">
-																	<button type="submit" class="btn btn-primary pull-right buzz-out" id="btnContactUs">
-																		Enviar Mensaje</button>
-																	</div>
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-											</div> 
-											<!-- fin del contenedor de contacto -->
-											
-						             </div>
-						             </section>
-						             <!-- fin de contacto -->
-             						<footer>
-										    <div class="container">
-											<div class="row clearfix">
-												<div class="col-md-4 column">
-												<strong>MÉTODOS DE PAGO</strong> <br>
-												<i class="fa fa-cc-paypal fa-3x"></i>  <i class="fa fa-cc-visa fa-3x"></i> <i class="fa fa-cc-mastercard fa-3x"></i>
+<section id="contacto">	
+<div class="contacto">
+<!--inicia el contenedor-->
+<div class="container">			
+<div class="row clearfix">
+<div class="col-md-12 column">
+<h1 align="right">ESCRÍBENOS</h1>
+<hr align="right">
+<p class="text-right">Si buscas Creatividad,Honestidad y Compromiso estas en el 
+sitio correcto.</p>
 
-													
-												</div>
-												<div class="col-md-4 column columnas-iconos">
-												<strong>SÍGUENOS</strong>
-													<ul>
-														<li class="columnas-iconos">
-														<i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/lapmediaweb" target="_blank">lapmediaweb</a>
-														</li>
-														<li class="columnas-iconos">
-														<i class="fa fa-twitter"></i>  <a href="https://www.twitter.com/lapmedia" target="_blank">lapmedia</a>
-														</li>
-													
-													</ul>
-												</div>
-												<div class="col-md-4 column">
-													<address> <strong>VISITANOS</strong><br>
-													La Paz B.C.S. México <br>
-													Boulevard J. Mújica / Colima.<br>
-													A lado de ESTAFETA<br>
-													Local #3<br>
-													(044) 6121112799 
-													</address>
-												</div>
-											</div>
-										</div>
-             								<!--inicia el contenedor-->
-											<div class="container">	
-												<div class="row clearfix">
-													<br>
-													<div class="col-md-12 column">
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-md-4 column">
+<!-- zona pendiente -->
+</div>
+<div class="col-md-8 column">
+<div class="well well-sm">
+	<form action="envio.php" method="post" id="contactform" name="contactform" title="LAPMEDIA - contacto">	
+	<div class="row">
+	<div class="col-md-6">
+	<div class="form-group">
+	<input type="hidden" class="form-control" id="verifspam"  name="verifspam" />
+	<label for="name">
+	</label>
+	<input type="text" class="form-control" id="name" ng-model="$root.name" name="name" placeholder="Escribe tu nombre" required />
+	</div>
+	<div class="form-group">
+	<label for="email">
+	</label>
+	<div class="input-group">
+	<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+	</span>
+	<input type="email" class="form-control" name="email" ng-model="$root.email" placeholder="Escribe tu email" required /></div>
+	</div>
+	<div class="form-group">
+	<label for="subject">
+	</label>
+<select ng-model="serviceType" ng-init="0" name="subject" class="form-control" required
+			ng-options="values for values in ['Diseño Web',
+			'Diseño Gráfico',
+			'Diseño de Imagen Corporativa (Logotipo, Tarjetas, Folletos)',
+			'Tienda en linea (Con pago Banamex y Paypal)',
+			'Sistemas administrativos',
+			'Servicio para Agencias',
+			'Videos Corporativos',
+			'Sesión de Fotos',
+			'Programación de Aplicaciones',
+			'Desarrollo de Software',
+			'Soporte',
+			'Otro']">
+			<option value="" selected="selected">Tipo de Servicio:</option>
+			</select>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="form-group">
+	<label for="name">
+	</label>
+	<textarea name="message"class="form-control" rows="9" cols="25" required
+	placeholder="Mensaje" ng-model="$root.message"></textarea>
+	</div>
+	</div>
+	<div class="col-md-12">
+	<button type="submit" class="btn btn-primary pull-right buzz-out">
+	Enviar Mensaje</button>
+	</div>
+	</div>
+	</form>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
+ </div>
+ </section>
+<footer>
+    <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+		<strong>MÉTODOS DE PAGO</strong> <br>
+		<i class="fa fa-cc-paypal fa-3x"></i>  <i class="fa fa-cc-visa fa-3x"></i> <i class="fa fa-cc-mastercard fa-3x"></i>
 
-														<p>
-															Todos Los Derechos Reservados LAPMEDIA © 2012-2015 • La Paz Baja California Sur México.</p>
+			
+		</div>
+		<div class="col-md-4 column columnas-iconos">
+		<strong>SÍGUENOS</strong>
+			<ul>
+				<li class="columnas-iconos">
+				<i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/lapmediaweb" target="_blank">lapmediaweb</a>
+				</li>
+				<li class="columnas-iconos">
+				<i class="fa fa-twitter"></i>  <a href="https://www.twitter.com/lapmedia" target="_blank">lapmedia</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="col-md-4 column">
+			<address> <strong>VISITANOS</strong><br>
+			La Paz B.C.S. México <br>
+			Boulevard J. Mújica / Colima.<br>
+			A lado de ESTAFETA<br>
+			Local #3<br>
+			(044) 6121112799 
+			</address>
+		</div>
+	</div>
+</div>
+		<!--inicia el contenedor-->
+	<div class="container">	
+		<div class="row clearfix">
+			<br>
+			<div class="col-md-12 column">
 
-													</div>
-												</div>
-											</div>
-										
-									</footer>	
-										<!-- fin del contenedor de video -->
-										<!-- Scrolling Nav JavaScript -->
-										<script src="js/jquery.easing.min.js"></script>
-										<script src="js/scrolling-nav.js"></script>
-                                        <script>//jQuery is required to run this code
-$( document ).ready(function() {
+				<p>
+					Todos Los Derechos Reservados LAPMEDIA © 2012-2015 • La Paz Baja California Sur México.</p>
+			</div>
+		</div>
+	</div>
 
-    scaleVideoContainer();
+</footer>
+<modal title="Obtener información" visible="$root.showModal">
+    <form role="form" action="envio.php" method="post">
+        <div class="form-horizontal">
+        <div class="form-group">
+                <label class="col-sm-3 control-label">Tipo de servicio:</label>
+                <div class="col-sm-9">
+                    <select ng-model="serviceType" ng-init="0" name="subject" class="form-control" required
+					ng-options="values for values in ['Diseño Web',
+					'Diseño Gráfico',
+					'Diseño de Imagen Corporativa (Logotipo, Tarjetas, Folletos)',
+					'Tienda en linea (Con pago Banamex y Paypal)',
+					'Sistemas administrativos',
+					'Servicio para Agencias',
+					'Videos Corporativos',
+					'Sesión de Fotos',
+					'Programación de Aplicaciones',
+					'Desarrollo de Software',
+					'Soporte',
+					'Otro']">
+					<option value="" selected="selected">Tipo de Servicio:</option>
+					</select>
+                </div>
+            </div>
+			<div class="form-group">
+                <label class="col-sm-3 control-label">Nombre:</label>
+                <div class="col-sm-9">
+            	<input type="text" class="form-control" id="name" ng-model="$root.name" name="name" placeholder="Escribe tu nombre" required />
+            	</div>
 
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video');
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Email:</label>
+                <div class="col-sm-9">
+                    	<input type="email" class="form-control" name="email" ng-model="$root.email" placeholder="Escribe tu email" required />
+            	</div>
 
-    $(window).on('resize', function() {
-        scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
-        scaleBannerVideoSize('.video-container .filter');
-        scaleBannerVideoSize('.video-container video');
-    });
+            </div>
+            <div class="form-group">
+            	<label class="col-sm-3 control-label">Mensaje</label>
+            	<div class="col-sm-9">
+            		<textarea name="message"class="form-control" rows="9" cols="25" required placeholder="Mensaje" ng-model="$root.message"></textarea>
+            	</div>
+            </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-default pull-right">Enviar mensaje</button><br><br>
+    </form>
+</modal>
+<!-- fin del contenedor de video -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="/js/app.js"></script>
 
-});
-
-function scaleVideoContainer() {
-
-    var height = $(window).height() + 5;
-    var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height',unitHeight);
-
-}
-
-function initBannerVideoSize(element){
-
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-
-    scaleBannerVideoSize(element);
-
-}
-
-function scaleBannerVideoSize(element){
-
-    var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
-    videoWidth,
-    videoHeight;
-
-    console.log(windowHeight);
-
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-        $(this).width(windowWidth);
-
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-            $(this).width(videoWidth).height(videoHeight);
-        }
-
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-    });
-}</script>
-				<script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
-
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/init.js"></script>
 </body>
 </html>
